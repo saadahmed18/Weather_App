@@ -11,17 +11,17 @@ export default function Header() {
           <nav>
             <ul className="flex gap-5 text-gray-400">
               <li>
-                <NavLink className="active:text-white">Home</NavLink>
+                <NavLink to="/" className="active:text-white">Home</NavLink>
               </li>
               <li>
-                <NavLink className="active:text-white">Download App</NavLink>
+                <NavLink to="/download-app" className="active:text-white">Download App</NavLink>
               </li>
               <li>
-                <NavLink className="active:text-white">Contact Us</NavLink>
+                <NavLink to="/contact-us" className="active:text-white">Contact Us</NavLink>
               </li>
             </ul>
           </nav>
-            <Link className="p-3 rounded-lg text-white bg-[#2e5369]" to="/signup"> Sign up</Link>
+            <Link to="/signup" className="p-3 rounded-lg text-white bg-[#2e5369]"> Sign up</Link>
         </div>
       </header>
     </>
